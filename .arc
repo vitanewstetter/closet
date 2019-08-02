@@ -3,6 +3,7 @@ whale-ehy
 
 @http
 get /
+get /details
 
 @tables
 data
