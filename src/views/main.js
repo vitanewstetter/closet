@@ -22,10 +22,12 @@ module.exports = function Home (props) {
   <div
     class="title types"
   >
+    <button class="type__button left"></button>
     ${props.types.map((el, idx) => {
       const className = (idx === 0) ? 'type is-active' : 'type';
       return `<p class="${className}">${el}</p>`
     }).join('')}
+    <button class="type__button right"></button>
   </div>
 </body>
 </html>
