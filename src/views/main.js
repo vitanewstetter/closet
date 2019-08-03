@@ -1,7 +1,5 @@
-const Styles = require('./styles')
-const Symbols = require('./symbols')
-const Splash = require('./splash')
-const Content = require('./content')
+const Styles = require('./styles');
+
 module.exports = function Home (props) {
   props = props || {}
   let title = props.title || 'Personal Website'
@@ -14,21 +12,21 @@ module.exports = function Home (props) {
   <title>${title}</title>
   ${Styles(props)}
   <!-- Replace this with your own custom font link and edit Styles font-family -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i&display=swap" rel="stylesheet">
   <!-- End custom font -->
   <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
 </head>
 <body
-  class="
-    min-width-20
-    display-flex-large
-    height-100vh
-    overflow-hidden-large
-  "
+  class="title"
 >
- ${Symbols}
- ${Splash(props)}
- ${Content(props)}
+  <div
+    class="title types"
+  >
+    ${props.types.map((el, idx) => {
+      const className = (idx === 0) ? 'type is-active' : 'type';
+      return `<p class="${className}">${el}</p>`
+    }).join('')}
+  </div>
 </body>
 </html>
   `

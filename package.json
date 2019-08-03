@@ -4,9 +4,16 @@
   "description": "Example Begin personal website",
   "main": "index.js",
   "scripts": {
-    "start": "npx sandbox",
+    "start": "nodemon --exec NODE_ENV=testing ARC_LOCAL=1 npx sandbox",
     "test": "tape ./test/*.js ./test/**/*.js | tap-spec",
     "lint": "eslint src --ignore-pattern node_modules --fix"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src/shared",
+      "src/views"
+    ],
+    "ext": "css,js,json,md,mjs"
   },
   "keywords": [
     "begin",
