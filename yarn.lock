@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@architect/architect@^5.9.13":
-  version "5.9.23"
-  resolved "https://registry.yarnpkg.com/@architect/architect/-/architect-5.9.23.tgz#fdba3a280c591863818f6a76b0f2461127a019b3"
-  integrity sha512-V9wbNqDIVJ7oKTxswG+pk1qQq0hrBcmH+p/UpgfU5/z9NGAu9x7WPgvDJMsQWQaHzqnf/JOTwfsrGl/1/CsL4A==
+"@architect/architect@^5.9.24":
+  version "5.9.24"
+  resolved "https://registry.yarnpkg.com/@architect/architect/-/architect-5.9.24.tgz#9a014fc9e5bc97b7da1c9e6ada92840f030be927"
+  integrity sha512-N3O89Dcv77J8yxPyZ5C/mXOOzcTEV17oD+9ECgUxLXhA7H+ZK0NRxuIEd3WWP3dyXcv8djumHrv6Jv5TtFGqDg==
   dependencies:
     "@architect/data" "^2.1.0"
     "@architect/parser" "^1.1.7"
-    "@architect/sandbox" "^1.2.6"
+    "@architect/sandbox" "^1.2.10"
     "@architect/utils" "^1.2.3"
     "@smallwins/validate" "^4.3.0"
     aws-sdk "^2.488.0"
@@ -67,10 +67,10 @@
   resolved "https://registry.yarnpkg.com/@architect/parser/-/parser-1.1.7.tgz#2467c1b1b9148ceb93effae43e978257d53a93f9"
   integrity sha512-fKyd7apWktnS580bOa75bWtx+RVxuhLNYjcaDrRRpuASTT4F+Gg4dZly8eGGehPHAQ3j3/0pLwnChiC2+fHozg==
 
-"@architect/sandbox@^1.2.6":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@architect/sandbox/-/sandbox-1.2.9.tgz#e238842ce1f0e8857bb68529098a198f9c1aa97e"
-  integrity sha512-X/mR9q9RT3WTMSuUQeg7Lvueu/q/MEaYJyMOKRG2qxJF7kZjuQiA9dd3bV8fQLCWmUmxHla+1JXJY3gvyfoi+w==
+"@architect/sandbox@^1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@architect/sandbox/-/sandbox-1.2.10.tgz#d830479e72538c09dea114e62264f854671d0c46"
+  integrity sha512-JX6/O3Wweje+maZ3RneT2Jxp97f+KPs0d5SekXFa4WGTZBDv72s3lXwZ56qr4apGrLbjkM/l5XdRgO4Uc0Noyg==
   dependencies:
     "@architect/hydrate" "^1.2.4"
     "@architect/parser" "^1.1.7"
