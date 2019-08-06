@@ -25,6 +25,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@architect/architect": "^5.9.13",
+    "contentful": "^7.9.0",
     "eslint": "^5.16.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.2",

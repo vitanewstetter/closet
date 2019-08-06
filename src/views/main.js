@@ -1,4 +1,6 @@
 const Styles = require('./styles');
+const Content = require('./content');
+const ArrowSvg = require('./arrow-svg');
 
 module.exports = function Home (props) {
   props = props || {}
@@ -16,19 +18,22 @@ module.exports = function Home (props) {
   <!-- End custom font -->
   <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
 </head>
-<body
-  class="title"
->
+<body>
   <div
     class="title types"
   >
-    <button class="type__button left"></button>
+    <button class="type__button left">
+      ${ArrowSvg()}
+    </button>
     ${props.types.map((el, idx) => {
       const className = (idx === 0) ? 'type is-active' : 'type';
       return `<p class="${className}">${el}</p>`
     }).join('')}
-    <button class="type__button right"></button>
+    <button class="type__button right">
+      ${ArrowSvg()}
+    </button>
   </div>
+  ${Content(props)}
 </body>
 </html>
   `
