@@ -2,6 +2,7 @@
   "name": "opa-get-index",
   "dependencies": {
     "@architect/data": "latest",
-    "@architect/functions": "latest"
+    "@architect/functions": "latest",
+    "contentful": "^7.9.0"
   }
 }
