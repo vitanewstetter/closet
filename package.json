@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec NODE_ENV=testing ARC_LOCAL=1 npx sandbox",
-    "test": "tape ./test/*.js ./test/**/*.js | tap-spec",
     "lint": "eslint src --ignore-pattern node_modules --fix"
   },
   "nodemonConfig": {
